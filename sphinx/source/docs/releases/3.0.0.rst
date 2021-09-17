@@ -83,11 +83,19 @@ Distance Specs
 ``ScreenDistanceSpec`` and ``DataDistanceSpec`` are removed. Use ``SizeSpec``
 instead.
 
-``render_mode`` was removed
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``render_mode``
+...............
 
-Annotations were cleanly separated between those which render to canvas and
-those that use HTML and CSS. The default is canvas rendering. Use the new
-``bokeh.models.annotations.html`` models whenever previously ``css`` render
-mode was used. Note that ``Span`` and ``BoxAnnotation`` don't have a HTML
-equivalent.
+``render_mode`` was removed from all annotattions. Annotations were cleanly
+separated between those which render to canvas and those that use HTML and CSS.
+The default is canvas rendering. Use the new ``bokeh.models.annotations.html``
+models whenever previously ``css`` render mode was used. Note that ``Span``
+and ``BoxAnnotation`` don't have a HTML equivalent.
+
+Moves
+~~~~~
+
+Arrow heads
+...........
+
+Arrow heads were moved from ``bokeh.models.arrow_heads`` to ``bokeh.models.annotations.arrows``.
