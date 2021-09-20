@@ -767,16 +767,16 @@ format strings.
 For full details about formats, see the full |PrintfTickFormatter|
 documentation in the |reference guide|.
 
-``FuncTickFormatter``
+``JSTickFormatter``
 '''''''''''''''''''''
 
-To fully customize the format of axis ticks, use the |FuncTickFormatter| in
+To fully customize the format of axis ticks, use the |JSTickFormatter| in
 combination with a JavaScript snippet as its ``code`` property.
 
 The variable ``tick`` contains the unformatted tick value. It is accessible in
 the snippet or function namespace at render time:
 
-.. bokeh-plot:: docs/user_guide/examples/styling_func_tick_formatter.py
+.. bokeh-plot:: docs/user_guide/examples/styling_js_tick_formatter.py
     :source-position: above
 
 .. _userguide_styling_axes_tick_label_orientation:
@@ -1202,7 +1202,7 @@ For more information, see :class:`~bokeh.models.text.MathML` in the
 .. |BasicTickFormatter| replace:: :class:`~bokeh.models.formatters.BasicTickFormatter`
 .. |CategoricalTickFormatter| replace:: :class:`~bokeh.models.formatters.CategoricalTickFormatter`
 .. |DatetimeTickFormatter| replace:: :class:`~bokeh.models.formatters.DatetimeTickFormatter`
-.. |FuncTickFormatter| replace:: :class:`~bokeh.models.formatters.FuncTickFormatter`
+.. |JSTickFormatter| replace:: :class:`~bokeh.models.formatters.JSTickFormatter`
 .. |LogTickFormatter| replace:: :class:`~bokeh.models.formatters.LogTickFormatter`
 .. |NumeralTickFormatter| replace:: :class:`~bokeh.models.formatters.NumeralTickFormatter`
 .. |PrintfTickFormatter| replace:: :class:`~bokeh.models.formatters.PrintfTickFormatter`
